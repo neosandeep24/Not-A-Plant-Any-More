@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Shadowlands 2 - Bridge.mp3-f926fcd07bf59631227369a8ee56b058.mp3str"
+
+[deps]
+
+source_file="res://music/Shadowlands 2 - Bridge.mp3"
+dest_files=[ "res://.import/Shadowlands 2 - Bridge.mp3-f926fcd07bf59631227369a8ee56b058.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

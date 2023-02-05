@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Client - I made his bass better.mp3-4e13469c9f71972edce0c998b7764e2d.mp3str"
+
+[deps]
+
+source_file="res://music/Client - I made his bass better.mp3"
+dest_files=[ "res://.import/Client - I made his bass better.mp3-4e13469c9f71972edce0c998b7764e2d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

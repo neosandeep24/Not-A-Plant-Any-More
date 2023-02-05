@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DeathFlash.mp3-c4395c1888025e62f1e08fc8ab4edc73.mp3str"
+
+[deps]
+
+source_file="res://music/DeathFlash.mp3"
+dest_files=[ "res://.import/DeathFlash.mp3-c4395c1888025e62f1e08fc8ab4edc73.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

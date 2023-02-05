@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lavalamp - Seasons.mp3-7f50cbf067ac1bf475dab83007da0d3a.mp3str"
+
+[deps]
+
+source_file="res://music/Lavalamp - Seasons.mp3"
+dest_files=[ "res://.import/Lavalamp - Seasons.mp3-7f50cbf067ac1bf475dab83007da0d3a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

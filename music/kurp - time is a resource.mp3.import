@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/kurp - time is a resource.mp3-6a7f38631fecba710f2c222934983070.mp3str"
+
+[deps]
+
+source_file="res://music/kurp - time is a resource.mp3"
+dest_files=[ "res://.import/kurp - time is a resource.mp3-6a7f38631fecba710f2c222934983070.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

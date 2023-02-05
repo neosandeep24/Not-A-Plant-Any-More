@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SCP-x7x.mp3-4cda505c6f63f9daebde1a63d0e05aea.mp3str"
+
+[deps]
+
+source_file="res://music/SCP-x7x.mp3"
+dest_files=[ "res://.import/SCP-x7x.mp3-4cda505c6f63f9daebde1a63d0e05aea.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

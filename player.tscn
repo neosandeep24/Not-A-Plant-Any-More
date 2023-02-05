@@ -1,0 +1,74 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://playersprts/r5.png" type="Texture" id=1]
+[ext_resource path="res://playersprts/r2.png" type="Texture" id=2]
+[ext_resource path="res://playersprts/r1.png" type="Texture" id=3]
+[ext_resource path="res://playersprts/r6.png" type="Texture" id=4]
+[ext_resource path="res://playersprts/r7.png" type="Texture" id=5]
+[ext_resource path="res://playersprts/r3.png" type="Texture" id=6]
+[ext_resource path="res://playersprts/r8.png" type="Texture" id=7]
+[ext_resource path="res://playersprts/r4.png" type="Texture" id=8]
+[ext_resource path="res://playersprts/w1.png" type="Texture" id=9]
+[ext_resource path="res://player.gd" type="Script" id=10]
+[ext_resource path="res://playersprts/j3.png" type="Texture" id=11]
+[ext_resource path="res://playersprts/j2.png" type="Texture" id=12]
+[ext_resource path="res://playersprts/j4.png" type="Texture" id=13]
+[ext_resource path="res://playersprts/d1.png" type="Texture" id=14]
+[ext_resource path="res://playersprts/patk1.png" type="Texture" id=15]
+[ext_resource path="res://playersprts/h1.png" type="Texture" id=16]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "duck",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": false,
+"name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 12.0
+height = 24.0
+
+[node name="player" type="RigidBody2D"]
+collision_mask = 2
+mode = 3
+contacts_reported = 3
+contact_monitor = true
+can_sleep = false
+script = ExtResource( 10 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2, 1 )
+frames = SubResource( 1 )
+animation = "attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="." to="." method="_on_player_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

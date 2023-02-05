@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/dova_Mauve Rhopalocera_master.mp3-2a41217d79703bbd089144b49376a0bb.mp3str"
+
+[deps]
+
+source_file="res://music/dova_Mauve Rhopalocera_master.mp3"
+dest_files=[ "res://.import/dova_Mauve Rhopalocera_master.mp3-2a41217d79703bbd089144b49376a0bb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
